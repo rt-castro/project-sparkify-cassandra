@@ -87,7 +87,7 @@ PROJECT FILES
     
     - **etl_nosql.py**: Runs the whole ETL process - creating the connection to the cassandra database, reading the CSV files, consolidating them into a single CSV file, and then ingesting them to the database.
     
-    - **Project_1B_ Project_Template.ipynb**: A more sequential and detailed breakdown of each of the main processes in the ETL workflow.
+    - **etl_nosql.ipynb**: A more sequential and detailed breakdown of each of the main processes in the ETL workflow.
 
  * Test
  
