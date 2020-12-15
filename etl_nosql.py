@@ -36,7 +36,10 @@ def create_consolidated_csv(newfile, column_headers, filedir):
     for root, dirs, files in os.walk(filepath):
         files = glob.glob(os.path.join(root,'*.csv'))
         for f in files:
-            file_path_list.append(os.path.abspath(f))
+            if '.ipynb_checkpoints' in f:
+                pass
+            else:
+                file_path_list.append(os.path.abspath(f))
             
     full_data_rows_list = [] 
     
